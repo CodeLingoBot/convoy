@@ -374,7 +374,7 @@ func formatDevice(device, fs string) error {
 	return err
 }
 
-// These methods are not implemented currently at DigitalOcean
+// SnapshotOps: These methods are not implemented currently at DigitalOcean
 func (d *Driver) SnapshotOps() (SnapshotOperations, error) {
 	return nil, errors.New("not implemented")
 }

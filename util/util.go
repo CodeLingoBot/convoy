@@ -168,7 +168,7 @@ func CompressDir(sourceDir, targetFile string) error {
 	return nil
 }
 
-// If sourceFile is inside targetDir, it would be deleted automatically
+// DecompressDir: If sourceFile is inside targetDir, it would be deleted automatically
 func DecompressDir(sourceFile, targetDir string) error {
 	tmpDir := targetDir + ".tmp"
 	if _, err := Execute("rm", []string{"-rf", tmpDir}); err != nil {
